@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript"> 
+     
+	/* alert('Hello,JavaScript')  */
+
+
+	/*문자열 자료형 - 이스케이프 문자*/
+	/* alert("Hello\" JavaScript!!\""); */
+	
+	 /*변수*/
+	 var radius = 10; // 정수 
+	/*  alert(radius); */
+	 
+	 var pi = 3.14; // 실수 
+	/*  alert(pi);
+	  */
+	 var varChar = 'A'; //문자
+	/*  alert(varChar); */
+	 
+	 var booleanType = true ; // boolean
+	 /* alert(booleanType); */
+	 
+	 var string = "Hello, JavaScript!!!" ;// 문자열
+	 /* alert(string); */
+	 
+	/*  alert(2*pi*radius);  */// 원의 둘레  
+	 
+	 
+	 /* 자료형 검사 */
+	 // 문자열
+	// var name = "이순신";
+	/*  alert(typeof(name)); */ /* typeof() : ()안에 들어있는 자료형을 출력해준다.  */
+	 
+	 //var num = 150; 
+	/*  alert(typeof(num)); */ // number
+	 
+	 //num = 3.14; 
+	 /* alert(typeof(num));   */// number
+	 
+	 //num = true; 
+	 
+	 
+	// alert(typeof(num));
+	 
+	 
+	  /* 입력  */
+/* 	  var input = prompt("이름을 입력하세요","두 글자 이상 입력");
+	  alert(input+"님 반갑습니다.");  */
+	
+	 
+	  
+	  // boolean 입력 받을 때 사용하는 함수 : confirm(); 
+	 /*  var check = confirm('수락하시겠습니까?'); 
+	  
+	  if(check) {		
+		  alert("수락하셨습니다.")
+		  
+	  }else{
+		  alert("거절하셨습니다.")
+	  } */
+	  
+	  
+	  // 숫자와 문자열 자료형 변환 
+	  // 1. + 연산자
+/*   alert(123+456+789); // 1368 (숫자)
+	  alert('123'+'456'+'789'); // 123456789 (문자열 출력)
+	  alert('123'+456+789); // 123456789 (문자열 + 숫자 = 문자열) */
+	   
+	   
+	  // 2. 덧셈을 제외한 사칙 연산
+	 /*  alert('123' * 3) // 369 (문자열 x 숫자 = 숫자)
+	  alert('123' - 3) // 120
+	  alert('123' / 3) // 41 (소수점까지 출력)
+	  alert('123' %  3) // 0 
+	  
+	  alert("홍길동" -2) // NaN (Not a Number)
+	  */ 
+	  
+	  // 3. 강제 자료형변환
+	  // - 다른 자료형 -> 숫자변환 : Number() 함수 사용. 
+	  // - 다른 자료형 -> 문자열 변환 : String() 함수 사용. 
+	  
+	/*   var input = prompt("숫자를 입력하세요.", "숫자");
+	  var num = Number(input); 
+	  
+	  alert(typeof(input)+" : " +num+ " : "+ typeof(num)) */
+	  // 숫자가 아닌 값 입력시 
+	  // - NaN(Not a Number) 출력. 
+	  // - 자바스크립트로 나타낼 수 없는 숫자 의미.
+	  
+	   /* undefined 자료형 */ 
+	  // 1. 존재하지 않는 것을 표현하는 자료형 
+	  // alert(typeof(variable));
+	  
+	  
+	  // 2. 변수를 선언했지만 초기화 하지 않았을 때.
+	 /*  var variable; 
+	  alert(typeof(variable));
+	   */
+	  
+	  /* 7. 산술 연산자 :  +, -, *, /,%  */
+	  // alert(27/35); // 결과값 실수 반환 
+	 
+	  
+	  /* 8. 비교 연산자 :  <, >, <=, >=, ==, !=*/
+	  // alert(27<35); 
+	  
+	  /* 9. 논리 연산자 :  &&, ||, !*/
+	  // alert(52 > 135 && 45<78);
+	  
+	   /* 10. 복합 대입 연산자 : += , -=, *=, /=, %=  */
+	   
+	   /* 11. 증감 연산자 */ 
+	/*   var number = 10;
+	  
+	  alert(number++); 10
+	  alert(++number); 11
+	   */
+	  // ruturn 되어지는 값이 ++number은 증가 한 값을, number++ 원래 값을 출력해준다. 
+	  
+	  /* 일치 연산자  */
+	  //alert(273 == "273"); 
+	  /* 숫자 == 문자열 : ERROR가 나와야 할 것 같은데? 결과는 True 
+		   숫자형으로 변환해준 것이다. */
+	   
+	 // === : 양변의 자료형과 갑이 일치. 
+	 // !== : 양변의 자료형과 값이 다름. 
+	 alert(273 === "273"); 
+	 
+	  /* 배열  */
+	  var array = [123,"string", true, function(){},{},[150,170]];
+	  // 동일 자료형이여야 하는 전제 조건이 붙지 않는다. 
+	  
+	  for(var i=0; i < array.length ; i++){
+	  		alert(array[i]);
+	  }
+	  
+	  
+	  
+	  /* int[] array = {1,2,3,4,5};  / *// java 배열의 형태 javascript는 { } 를 객체를 생성시에 사용한다. 
+	  
+	 
+	   
+</script>
+</head>
+<body>
+
+</body>
+</html>
+
+<!--  alert() : JavaScript  안에서만 사용되는 출력 함수  -->
